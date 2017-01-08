@@ -86,6 +86,7 @@ public class WeatherActivity extends AppCompatActivity {
         }
     }
 
+
     /**
      * 加载必应每日一图
      */
