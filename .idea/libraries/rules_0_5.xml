@@ -9,6 +9,7 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="jar://H:/androidsdk_4_5_6/extras/android/m2repository/com/android/support/test/rules/0.5/rules-0.5-sources.jar!/" />
       <root url="jar://G:/Android/androidsdk_4_5_6/extras/android/m2repository/com/android/support/test/rules/0.5/rules-0.5-sources.jar!/" />
     </SOURCES>
   </library>
