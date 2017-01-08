@@ -113,6 +113,7 @@ public class WeatherActivity extends AppCompatActivity {
         });
     }
 
+
     private void initView() {
         weatherLayout = (ScrollView) findViewById(R.id.weather_layout);
         titleCity = (TextView) findViewById(R.id.title_city);
