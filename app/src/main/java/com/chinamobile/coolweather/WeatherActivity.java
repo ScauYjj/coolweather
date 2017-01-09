@@ -77,6 +77,7 @@ public class WeatherActivity extends AppCompatActivity implements View.OnClickLi
             getWindow().setStatusBarColor(Color.TRANSPARENT);
 
         }*/
+        
         setContentView(R.layout.activity_weather);
         initView();
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
