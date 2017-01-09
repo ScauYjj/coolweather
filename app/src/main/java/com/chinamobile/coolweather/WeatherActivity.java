@@ -77,7 +77,7 @@ public class WeatherActivity extends AppCompatActivity implements View.OnClickLi
             getWindow().setStatusBarColor(Color.TRANSPARENT);
 
         }*/
-        
+
         setContentView(R.layout.activity_weather);
         initView();
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
@@ -218,8 +218,8 @@ public class WeatherActivity extends AppCompatActivity implements View.OnClickLi
             dateText.setText(forecast.date);
             infoText.setText(forecast.more.info);
             maxText.setText(forecast.temperature.max+"℃");
-            minText.setText(forecast.temperature.mix+"℃");
-           // minText.setText(14+"℃");
+            //minText.setText(forecast.temperature.mix+"℃");
+           minText.setText(11+"℃");
             forecastLayout.addView(view);
         }
         if (weather.aqi != null){
@@ -235,14 +235,8 @@ public class WeatherActivity extends AppCompatActivity implements View.OnClickLi
         carWashText.setText(carWash);
         sportText.setText(sport);
         weatherLayout.setVisibility(View.VISIBLE);
-
-        if (weather != null && weather.status.equals("ok")){
-            Intent intent = new Intent(this,AutoUpdateService.class);
-            startService(intent);
-        }else {
-            Toast.makeText(WeatherActivity.this,"获取天气信息失败",Toast.LENGTH_SHORT).show();
-        }
-
+        Intent intent = new Intent(this,AutoUpdateService.class);
+        startService(intent);
     }
 
     @Override
